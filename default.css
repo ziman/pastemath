@@ -117,13 +117,18 @@ div#preview {
 	background-color: white;
 	border: 1px solid #ddd;
 	padding: 5px;
-	font-family: 'Georgia', 'Petrona', 'Georgia', serif;
+	font-family: 'Petrona', 'Georgia', serif;
 	font-size: 14px;
+}
+
+div#pbody p {
+	margin-bottom: 0px;
+	margin-top: 10px;
 }
 
 div#phead {
 	border-bottom: 1px dotted #ccc;
-	margin-bottom: 10px;
+	margin-bottom: 6px;
 	text-align: center;
 }
 
@@ -136,6 +141,7 @@ span#pauthor {
 	float:right;
 	font-style: italic;
 	color: #888;
+	margin-right: 2px;
 }
 
 span#gauthor {

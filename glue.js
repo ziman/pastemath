@@ -1,11 +1,19 @@
 function update()
 {
 	var src = $('#edit').val();
-	// src = src.replace(/\\emph{[^}]+}/, '<em>$1</em>');
+
+	src = src.replace(/&/, '&amp;');
+	src = src.replace(/</, '&lt;');
+	src = src.replace(/>/, '&gt;');
+
+	src = src.replace(/\\emph{([^}]+)}/, '<em>$1</em>');
+	src = src.replace(/\n\n/g, '</p><p>');
+
 	$('#ptitle').text($('#title').val());
 	$('#pauthor').text($('#nick').val());
 	$('#gauthor').text($('#nick').val());
-	$('#pbody').text(src);	
+
+	$('#pbody').html('<p>' + src + '</p>');	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub,"pbody"]);
 }
 
