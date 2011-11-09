@@ -46,8 +46,21 @@ div#wrapper {
 	margin-top: 15px;
 }
 
+div#footer {
+	margin: 0px auto;
+	padding: 5px;
+	width: 800px;
+	text-align: center;
+	color: #333;
+	font-size: 10px;
+}
+
 div#expander {
 	text-align: center;
+	display: none;
+}
+
+span.meh {
 	display: none;
 }
 
