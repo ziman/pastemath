@@ -2,11 +2,12 @@ function update()
 {
 	var src = $('#edit').val();
 
-	src = src.replace(/&/, '&amp;');
-	src = src.replace(/</, '&lt;');
-	src = src.replace(/>/, '&gt;');
+	src = src.replace(/&/g, '&amp;');
+	src = src.replace(/</g, '&lt;');
+	src = src.replace(/>/g, '&gt;');
 
-	src = src.replace(/\\emph{([^}]+)}/, '<em>$1</em>');
+	src = src.replace(/\\emph{([^}]+)}/g, '<em>$1</em>');
+	src = src.replace(/\\textbf{([^}]+)}/g, '<strong>$1</strong>');
 	src = src.replace(/\n\n/g, '</p><p>');
 
 	$('#ptitle').text($('#title').val());
