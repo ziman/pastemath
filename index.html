@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>PasteMath</title>
+		<link href='http://fonts.googleapis.com/css?family=Petrona' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="default.css" />
+	</head>
+	<script type="text/javascript" src="jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="jquery.hashchange-1.0.0.js"></script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<body>
+		<div id="wrapper">
+			<div id="toolbox"><a href="/">New post</a></div>
+			<h1><a href="/">PasteMath</a></h1>
+		<div id="editor" class="centered">
+			<label for="nick">Author:</label><input type="text" name="nick" id="nick" value="" />
+			<label for="title">Title:</label><input type="text" name="title" id="title" value="" />
+			<button id="saveButton">Save</button><br/>
+			<textarea id="edit" rows="*" cols="*">Your text here.</textarea>
+			<div id="upwrap"><button id="update">Preview</button></div>
+		</div>
+		<div id="expander"><a id="expand" href="#">Edit this post</a></div>
+		<div id="divider"></div>
+		<div id="preview" class="centered"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="glue.js"></script>
+</html>

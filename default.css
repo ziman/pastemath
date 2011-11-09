@@ -1,0 +1,109 @@
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color: #444;
+}
+
+textarea {
+	width: 580px;
+	height: 280px;
+	border: 1px solid #ddd;
+	background-color: white;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+button#update {
+	margin: 0px auto;
+}
+
+input {
+	border: 1px solid #ddd;
+	background-color: white;
+	padding: 2px;
+}
+
+input#nick {
+	width: 150px;
+}
+
+input#title {
+	width: 250px;
+}
+
+div#editor {
+	width: 600px;
+	margin: 0px auto;
+}
+
+div#wrapper {
+	background-color: #eee;
+	width: 800px;
+	border: 1px solid black;
+	margin: 0px auto;
+	padding: 5px;
+	margin-top: 15px;
+}
+
+div#expander {
+	text-align: center;
+	display: none;
+}
+
+div#expander a:hover, div#toolbox a:hover {
+	color: #888;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+div#toolbox {
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: -12px;
+	text-align: right;
+}
+
+div#upwrap {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted #ccc;
+	padding-bottom: 10px;
+	font-size: 2.4em;
+	width: 760px;
+	font-weight: normal;
+	color: #666;
+}
+
+h1 a {
+	color: #666;
+}
+
+div#divider {
+	width: 760px;
+	border-bottom: 1px dotted #ccc;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+div#preview {
+	margin: 0px auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 400px;
+	min-height: 200px;
+	background-color: white;
+	border: 1px solid #ddd;
+	padding: 5px;
+	font-family: 'Petrona', 'Georgia', serif;
+	font-size: 14px;
+}
