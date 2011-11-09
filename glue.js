@@ -2,8 +2,11 @@ function update()
 {
 	var src = $('#edit').val();
 	// src = src.replace(/\\emph{[^}]+}/, '<em>$1</em>');
-	$('#preview').text(src);	
-	MathJax.Hub.Queue(["Typeset",MathJax.Hub,"preview"]);
+	$('#ptitle').text($('#title').val());
+	$('#pauthor').text($('#nick').val());
+	$('#gauthor').text($('#nick').val());
+	$('#pbody').text(src);	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub,"pbody"]);
 }
 
 function loadPost(id)
