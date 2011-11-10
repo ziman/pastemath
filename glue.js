@@ -46,9 +46,13 @@ function hashChanged()
 {
 	var hash = window.location.hash;
 	if (hash)
+	{
 		loadPost(hash.substr(1));
+	}
 	else
+	{
 		update();
+	}
 }
 
 function save()
