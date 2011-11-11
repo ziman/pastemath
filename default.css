@@ -126,6 +126,13 @@ div#pbody p {
 	margin-top: 10px;
 }
 
+div#nojs {
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	margin-top: 10px;
+}
+
 div#phead {
 	border-bottom: 1px dotted #ccc;
 	margin-bottom: 6px;

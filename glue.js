@@ -100,6 +100,7 @@ function expand()
 
 function init()
 {
+	$('#nojs').hide();
 	hashChanged();
 
 	$('#update').click(update);
