@@ -2,13 +2,16 @@ function update()
 {
 	var src = $('#edit').val();
 
+	// HTML escaping
 	src = src.replace(/&/g, '&amp;');
 	src = src.replace(/</g, '&lt;');
 	src = src.replace(/>/g, '&gt;');
 
+	// Formatting
 	src = src.replace(/\\emph{([^}]+)}/g, '<em>$1</em>');
 	src = src.replace(/\\textbf{([^}]+)}/g, '<strong>$1</strong>');
 	src = src.replace(/\n\n/g, '</p><p>');
+	src = src.replace(/\\\\/g, '<br/>');
 
 	$('#ptitle').text($('#title').val());
 	$('#pauthor').text($('#nick').val());

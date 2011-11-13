@@ -130,6 +130,7 @@ div#nojs {
 	text-align: center;
 	font-weight: bold;
 	color: red;
+	margin: 0px auto;
 	margin-top: 10px;
 }
 

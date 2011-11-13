@@ -18,7 +18,6 @@
 			<textarea id="edit" rows="*" cols="*">Your text here.</textarea>
 			<div id="upwrap"><button id="update">Preview</button></div>
 		</div>
-		<div id="nojs">You need JavaScript for this page to work.</div>
 		<div id="expander"><a id="expand" href="#">Edit this post</a></div>
 		<div id="divider"></div>
 		<div id="preview" class="centered">
@@ -26,6 +25,12 @@
 			<div id="pbody"></div></div>
 		</div>
 		<div id="footer">PasteMath (c) 2011 functor.sk. Reach me at pastemath<span class="meh">fuck</span>@<span class="neh">functor</span><span class="meh">spam</span>.sk.</div>
+		<noscript>
+		    <style type="text/css">
+			#wrapper {display:none;}
+		    </style>
+			<div id="nojs">You need JavaScript for this page to work.</div>
+		</noscript>
 	</body>
 	<script type="text/javascript" src="glue.js"></script>
 </html>
