@@ -15,9 +15,9 @@ if (isset($_POST['action']))
 	if ($action == 'save')
 	{
 		$post = Array(
-			'nick' => stripslashes($_POST['nick']),
-			'title' => stripslashes($_POST['title']),
-			'content' => stripslashes($_POST['content']),
+			'nick' => $_POST['nick'],
+			'title' => $_POST['title'],
+			'content' => $_POST['content'],
 			'ip' => $_SERVER['REMOTE_ADDR'],
 			'timestamp' => time()
 		);
